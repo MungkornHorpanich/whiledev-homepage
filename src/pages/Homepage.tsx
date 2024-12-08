@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 const Homepage: React.FC = () => {
   return (
-    <div className="bg-[#202023]">
+    <div className="dark:bg-[#202023] transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)]  bg-white h-[10000px]">
       <Navbar />
     </div>
   );
