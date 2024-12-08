@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 const Homepage: React.FC = () => {
   return (
-    <div>
+    <div className="bg-[#202023]">
       <Navbar />
     </div>
   );
