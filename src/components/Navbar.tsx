@@ -10,9 +10,9 @@ const Navbar: React.FC = () => {
   return (
     <div className="w-full fixed dark:bg-[#202023] dark:text-white text-black mx-auto backdrop-blur-md">
       <div className="mx-auto max-w-3xl">
-        <div className="text-white flex justify-between flex-row md:m-0 p-3 pl-4 gap-3">
+        <div className="text-white flex justify-between flex-row md:m-0 p-4 md:p-1 pl-7 md:pl-5 gap-3">
           <Link to={"/"}>
-            <div className="flex text-xl md:text-2xl justify-center h-full items-center text-center font-semibold tracking-wide dark:text-gray-200 text-black">
+            <div className="flex text-lg md:text-xl justify-center h-full items-center text-center font-semibold font-sans tracking-wide dark:text-gray-200 text-black">
               whiledev.
             </div>
           </Link>
