@@ -9,14 +9,39 @@ const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="w-full fixed dark:bg-[#202023] dark:text-white text-black mx-auto backdrop-blur-md">
+    <div className="w-full fixed dark:bg-[#202023] py-3 dark:text-white text-black mx-auto backdrop-blur-md">
       <div className="mx-auto max-w-3xl">
-        <div className="text-white flex justify-between flex-row md:m-0 p-4 md:p-1 pl-7 md:pl-5 gap-3">
-          <Link to={"/"}>
-            <div className="flex text-lg md:text-xl justify-center h-full items-center text-center font-semibold font-sans tracking-wide dark:text-gray-200 text-black">
-              whiledev.
+        <div className="text-white flex justify-between flex-row md:m-0 p-4 md:p-1 md:pl-5 gap-3">
+          <div className="flex flex-row">
+            <Link to={"/"}>
+              <div className="flex text-lg md:text-xl justify-center h-full items-center text-center font-semibold font-sans tracking-wide dark:text-gray-200 text-black">
+                whiledev.
+              </div>
+            </Link>
+            <div className="ml-8 gap-4 text-black dark:text-white hidden md:flex">
+              <Link to={"/work"}>
+                <div className="flex text-md hover:underline p-1 h-full items-center px-2 ">
+                  Works
+                </div>
+              </Link>
+              <Link to={"/post"}>
+                <div className="flex text-md hover:underline p-1 h-full items-center px-2 ">
+                  Posts
+                </div>
+              </Link>
+              <a
+                href="https://whilebio.vercel.app/"
+                className="flex text-md hover:underline p-1 h-full items-center px-2 "
+              >
+                Contact
+              </a>
+              <a href="https://github.com/MungkornHorpanich/whiledev-homepage">
+                <div className="flex text-md hover:underline gap-1 p-1 h-full items-center px-2 ">
+                  <FaGithub size={22} className="h-full" /> Source
+                </div>
+              </a>
             </div>
-          </Link>
+          </div>
 
           {/* The burger menu */}
           <div className="flex gap-2">
@@ -55,18 +80,18 @@ const Navbar: React.FC = () => {
                   </a>
                   <a
                     className="block rounded-lg py-2 px-3 transition dark:hover:bg-white/5 hover:bg-black/5"
-                    href="#"
+                    href="https://whilebio.vercel.app/"
                   >
-                    <p className="font-semibold dark:text-white">Reports</p>
+                    <p className="font-semibold dark:text-white">Contacts</p>
                     <p className="dark:text-white/50">
-                      Keep track of your growth
+                      My social media accounts
                     </p>
                   </a>
                 </div>
                 <div className="p-3">
                   <a
                     className="block rounded-lg py-2 px-3 transition dark:hover:bg-white/5 hover:bg-black/5"
-                    href="#"
+                    href="https://github.com/MungkornHorpanich/whiledev-homepage"
                   >
                     <p className="font-semibold dark:text-white gap-1 flex item-center">
                       <FaGithub size={22} className="h-full" /> Source
