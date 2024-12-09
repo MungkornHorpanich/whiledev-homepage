@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import { HiMenu, HiSun, HiMoon } from "react-icons/hi";
 import useTheme from "../hooks/useTheme";
+import { FaGithub } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
@@ -33,44 +34,44 @@ const Navbar: React.FC = () => {
               <PopoverPanel
                 transition
                 anchor="bottom"
-                className="divide-y mt-3 w-[250px] divide-white/5 rounded-xl dark:bg-white/5 bg-black/5 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
+                className="divide-y mt-3 w-[250px] divide-white/5 rounded-xl dark:bg-white/5 bg-black/5 border dark:border-gray-700 border-gray-200 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
               >
-                <div className="p-3">
+                <div className="p-3 text-black">
                   <a
-                    className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                    className="block rounded-lg py-2 px-3 transition dark:hover:bg-white/5 hover:bg-black/5"
                     href="#"
                   >
-                    <p className="font-semibold text-white">Insights</p>
+                    <p className="font-semibold dark:text-white">Works</p>
+                    <p className="dark:text-white/50">Projects I've created</p>
+                  </a>
+                  <a
+                    className="block rounded-lg py-2 px-3 transition dark:hover:bg-white/5 hover:bg-black/5"
+                    href="#"
+                  >
+                    <p className="font-semibold dark:text-white">Posts</p>
                     <p className="dark:text-white/50">
-                      Measure actions your users take
+                      Coding posts and tutorial
                     </p>
                   </a>
                   <a
-                    className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                    className="block rounded-lg py-2 px-3 transition dark:hover:bg-white/5 hover:bg-black/5"
                     href="#"
                   >
-                    <p className="font-semibold text-white">Automations</p>
-                    <p className="text-white/50">
-                      Create your own targeted content
+                    <p className="font-semibold dark:text-white">Reports</p>
+                    <p className="dark:text-white/50">
+                      Keep track of your growth
                     </p>
-                  </a>
-                  <a
-                    className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                    href="#"
-                  >
-                    <p className="font-semibold text-white">Reports</p>
-                    <p className="text-white/50">Keep track of your growth</p>
                   </a>
                 </div>
                 <div className="p-3">
                   <a
-                    className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                    className="block rounded-lg py-2 px-3 transition dark:hover:bg-white/5 hover:bg-black/5"
                     href="#"
                   >
-                    <p className="font-semibold text-white">Documentation</p>
-                    <p className="text-white/50">
-                      Start integrating products and tools
+                    <p className="font-semibold dark:text-white gap-1 flex item-center">
+                      <FaGithub size={22} className="h-full" /> Source
                     </p>
+                    <p className="dark:text-white/50">Source of this project</p>
                   </a>
                 </div>
               </PopoverPanel>
