@@ -45,15 +45,17 @@ const Navbar: React.FC = () => {
 
           {/* The burger menu */}
           <div className="flex gap-2">
-            <button
-              onClick={toggleTheme}
-              className="border flex md:p-2 my-[3px] text-2xl p-1 text-black dark:text-white dark:border-gray-700 rounded-md"
-            >
-              {theme === "light" ? <HiMoon size={23} /> : <HiSun size={23} />}
-            </button>
+            <div className="h-full">
+              <button
+                onClick={toggleTheme}
+                className="border flex mx-auto justify-center text-black dark:text- text- md:p-2 h-full text-center text-2xl p-1 dark:text-white/60 dark:border-gray-700 rounded-md"
+              >
+                {theme === "light" ? <HiMoon /> : <HiSun />}
+              </button>
+            </div>
 
             <Popover className="md:hidden">
-              <PopoverButton className="flex border dark:border-gray-700 p-1 mt-[3px] rounded-lg text-2xl items-center mx-auto text-center dark:text-white/50 text-black focus:outline-none ">
+              <PopoverButton className="flex border dark:border-gray-700 p-1 rounded-lg text-2xl items-center mx-auto text-center dark:text-white/50 text-black focus:outline-none ">
                 <HiMenu />
               </PopoverButton>
               <PopoverPanel
