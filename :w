@@ -24,7 +24,7 @@ const Homepage: React.FC = () => {
           <h1 className="text-xl md:text-2xl font-medium">My Contents</h1>
           <div className="md:grid md:grid-cols-3 flex flex-col ">
             <Link to={"/posts"}>
-              <div className="flex flex-col md:mx-2 my-2 mt-4 hover:shadow-sm hover:shadow-gray-400 hover:translate-y-[-5px] py-6 md:m-5 dark:border-gray-700 border-gray-200 border rounded-lg">
+              <div className="flex flex-col md:mx-2 my-2 mt-4 hover:shadow-sm hover:shadow-gray-400 hover:translate-y-[-5px] py-6 md:m-5 dark:border-gray-100 border-gray-200 border rounded-lg">
                 <h1 className="text-center font-medium">Posts</h1>
                 <h1 className="text-center font-bold">69</h1>
                 <h1 className="text-center text-[14px] text-gray-400 font-thin">
@@ -33,7 +33,7 @@ const Homepage: React.FC = () => {
               </div>
             </Link>
             <a href="https://www.youtube.com/@WhileDev77">
-              <div className="flex flex-col md:mx-2 my-2 hover:shadow-sm hover:shadow-gray-400 hover:translate-y-[-5px] py-6 md:m-5 dark:border-gray-700 border-gray-200 border rounded-lg">
+              <div className="flex flex-col md:mx-2 my-2 hover:shadow-sm hover:shadow-gray-400 hover:translate-y-[-5px] py-6 md:m-5 border-gray-200 border rounded-lg">
                 <h1 className="text-center font-medium">Videos</h1>
                 <h1 className="text-center font-bold">1</h1>
                 <h1 className="text-center text-[14px] text-gray-400 font-thin">
@@ -42,7 +42,7 @@ const Homepage: React.FC = () => {
               </div>
             </a>
             <a href="">
-              <div className="flex flex-col md:mx-2 my-2 hover:shadow-sm hover:shadow-gray-400 hover:translate-y-[-5px] py-6 md:m-5 dark:border-gray-700 border-gray-200 border rounded-lg">
+              <div className="flex flex-col md:mx-2 my-2 hover:shadow-sm hover:shadow-gray-400 hover:translate-y-[-5px] py-6 md:m-5 border-gray-200 border rounded-lg">
                 <h1 className="text-center font-medium">Projects</h1>
                 <h1 className="text-center font-bold">30</h1>
                 <h1 className="text-center text-[14px] text-gray-400 font-thin">

@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="w-full fixed dark:bg-[#202023] py-3 dark:text-white text-black mx-auto backdrop-blur-md">
+    <div className="w-full fixed dark:bg-[#202023] py-[2px] dark:text-white text-black mx-auto backdrop-blur-md">
       <div className="mx-auto max-w-3xl">
         <div className="text-white flex justify-between flex-row md:m-0 p-4 md:p-1 md:pl-5 gap-3">
           <div className="flex flex-row">
@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
                   Works
                 </div>
               </Link>
-              <Link to={"/post"}>
+              <Link to={"/posts"}>
                 <div className="flex text-md hover:underline p-1 h-full items-center px-2 ">
                   Posts
                 </div>
@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
               </a>
               <a href="https://github.com/MungkornHorpanich/whiledev-homepage">
                 <div className="flex text-md hover:underline gap-1 p-1 h-full items-center px-2 ">
-                  <FaGithub size={22} className="h-full" /> Source
+                  <FaGithub size={18} className="h-full" /> Source
                 </div>
               </a>
             </div>
@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
 
           {/* The burger menu */}
           <div className="flex gap-2">
-            <div className="h-full">
+            <div className="h-full md:pr-6">
               <button
                 onClick={toggleTheme}
                 className="border flex mx-auto justify-center text-black dark:text- text- md:p-2 h-full text-center text-2xl p-1 dark:text-white/60 dark:border-gray-700 rounded-md"
@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
               <PopoverPanel
                 transition
                 anchor="bottom"
-                className="divide-y mt-3 w-[250px] divide-white/5 rounded-xl dark:bg-white/5 bg-black/5 border dark:border-gray-700 border-gray-200 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
+                className="divide-y mt-3 w-[250px] divide-white/5 rounded-xl dark:bg-[#202023] bg-white border dark:border-gray-700 border-gray-200 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
               >
                 <div className="p-3 text-black">
                   <a
