@@ -1,16 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 
 const Homepage: React.FC = () => {
-  const [content, setContent] = useState<String>("");
-
-  useEffect(() => {
-    import("../posts/firstpost.md").then((res) => {
-      fetch(res.defualt);
-    });
-  }, []);
-
   return (
     <div className="dark:bg-[#202023] transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)]  bg-white h-[10000px]">
       <Navbar />
