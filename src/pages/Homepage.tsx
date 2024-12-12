@@ -1,23 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 
 const Homepage: React.FC = () => {
+  const [content, setContent] = useState<String>("");
+
+  useEffect(() => {
+    import("../posts/firstpost.md").then((res) => {
+      fetch(res.defualt);
+    });
+  }, []);
+
   return (
     <div className="dark:bg-[#202023] transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)]  bg-white h-[10000px]">
       <Navbar />
 
-      <div className="pt-24 max-w-3xl mx-auto px-5 text-black dark:text-white">
-        <div className="text-black dark:text-white dark:bg-[#2e2e2e] px-8 mx-auto text-md md:text-lg bg-gray-100 py-2 md:py-3 text-center md:font-medium rounded-lg p-1 transition duration-600 ease-in-out [--anchor-gap:var(--spacing-5)] ">
-          📍Hi! I'm A dedicated Software Developer based in Thailand!
+      <div className="pt-24 max-w-2xl xl:max-w-3xl mx-auto px-5 text-black dark:text-white">
+        <div className="mt-5 text-lg">
+          Hi, I’m Mungkorn, a coder from Thailand who loves turning ideas into
+          reality with code.
+          <br />
+          <br />
+          In this space, I’ll be sharing my projects, insights, and experiences
+          from my programming journey.
+          <br />
+          <br />
+          Stay tuned and explore with me!
+          <br />
         </div>
 
-        <div className="mt-5">
-          I'm a 14 years old who's passionate about full stack application
-          development because of the diversity of tech he gets to learn and
-          code.
-          <br />
-          hello
+        <div className="text-black text-center dark:text-white mt-10 dark:bg-[#2e2e2e] px-4 mx-auto text-md md:text-lg bg-gray-100 py-2 md:py-4  md:font-medium rounded-lg p-1 transition duration-600 ease-in-out [--anchor-gap:var(--spacing-5)] ">
+          Hello, I'm an indie app developer based in Thailand!
         </div>
 
         <div className="mt-12 flex flex-col">
