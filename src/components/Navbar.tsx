@@ -9,12 +9,12 @@ const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="w-full fixed dark:bg-[#202023] py-[2px] dark:text-white text-black mx-auto backdrop-blur-md">
+    <div className="w-full fixed dark:bg-[#202023] bg-white py-[5px] dark:text-white text-black mx-auto">
       <div className="mx-auto max-w-3xl">
         <div className="text-white flex justify-between flex-row md:m-0 p-4 md:p-1 md:pl-5 gap-3">
           <div className="flex flex-row">
             <Link to={"/"}>
-              <div className="flex text-lg md:text-xl justify-center h-full items-center text-center font-semibold font-sans tracking-wide dark:text-gray-200 text-black">
+              <div className="flex text-2xl md:text-xl justify-center h-full items-center text-center font-semibold font-sans tracking-wide dark:text-gray-200 text-black">
                 whiledev.
               </div>
             </Link>
@@ -48,14 +48,14 @@ const Navbar: React.FC = () => {
             <div className="h-full md:pr-6">
               <button
                 onClick={toggleTheme}
-                className="border flex mx-auto justify-center text-black dark:text- text- md:p-2 h-full text-center text-2xl p-1 dark:text-white/60 dark:border-gray-700 rounded-md"
+                className="border flex mx-auto justify-center text-black dark:text-white text-3xl md:text-xl md:p-2 h-full text-center p-1 dark:text-white/60 dark:border-gray-700 rounded-md"
               >
                 {theme === "light" ? <HiMoon /> : <HiSun />}
               </button>
             </div>
 
             <Popover className="md:hidden">
-              <PopoverButton className="flex border dark:border-gray-700 p-1 rounded-lg text-2xl items-center mx-auto text-center dark:text-white/50 text-black focus:outline-none ">
+              <PopoverButton className="flex border dark:border-gray-700 p-1 rounded-lg text-3xl items-center mx-auto text-center dark:text-white/50 text-black focus:outline-none ">
                 <HiMenu />
               </PopoverButton>
               <PopoverPanel
@@ -71,15 +71,15 @@ const Navbar: React.FC = () => {
                     <p className="font-semibold dark:text-white">Works</p>
                     <p className="dark:text-white/50">Projects I've created</p>
                   </a>
-                  <a
+                  <Link
+                    to="/posts"
                     className="block rounded-lg py-2 px-3 transition dark:hover:bg-white/5 hover:bg-black/5"
-                    href="#"
                   >
                     <p className="font-semibold dark:text-white">Posts</p>
                     <p className="dark:text-white/50">
                       Coding posts and tutorial
                     </p>
-                  </a>
+                  </Link>
                   <a
                     className="block rounded-lg py-2 px-3 transition dark:hover:bg-white/5 hover:bg-black/5"
                     href="https://whilebio.vercel.app/"
