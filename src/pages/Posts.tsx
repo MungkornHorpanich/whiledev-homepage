@@ -1,22 +1,28 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
-import MarkdownRenderer from "../components/MarkdownRenderer";
+import Markdown from "markdown-to-jsx";
 
 const Posts: React.FC = () => {
-  const [content, setContent] = useState<string>("");
+  const markdown = `# Hello, Markdown!
+  ## Lists
 
-  useEffect(() => {
-    // Fetch the markdown file (assuming it's in the public folder)
-    fetch("/posts/firstpost.md") // Adjust path as needed
-      .then((response) => response.text())
-      .then((data) => setContent(data));
-  }, []);
+  ### Ordered List
+ 1. Item 1
+ 2. Item 2
+ 3. Item 3
+
+ ### Unordered List
+ - Bullet 1
+ - Bullet 2
+   - Sub-bullet A
+   - Sub-bullet B
+ - Bullet 3`;
 
   return (
     <div className="dark:bg-[#202023] transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)]  bg-white h-[10000px]">
       <Navbar />
-      <div className="pt-24 text-black dark:text-white">
-        <MarkdownRenderer markdown={content} />
+      <div className="pt-24 px-5 text-xl text-black dark:text-white max-w-2xl mx-auto md:max-w-3xl">
+        <Markdown className="prose">{markdown}</Markdown>
       </div>
     </div>
   );
