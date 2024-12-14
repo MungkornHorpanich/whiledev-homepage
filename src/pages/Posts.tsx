@@ -8,7 +8,7 @@ const Posts: React.FC = () => {
       <Navbar />
       <div className="pt-24 px-5 text-xl text-black dark:text-white max-w-2xl mx-auto md:max-w-3xl">
         <h1>Post</h1>
-        <Link to={"/react-tutorial"}>React-Tutorial</Link>
+        <Link to={"/posts/react-tutorial"}>React-Tutorial</Link>
       </div>
     </div>
   );

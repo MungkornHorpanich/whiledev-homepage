@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     element: <Posts />,
   },
   {
-    path: "/react-tutorial",
+    path: "/posts/react-tutorial",
     element: <ReactTutorial />,
   },
 ]);

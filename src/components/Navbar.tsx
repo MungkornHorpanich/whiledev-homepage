@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="w-full fixed dark:bg-[#202023] bg-white py-[5px] dark:text-white text-black mx-auto">
+    <div className="w-full z-20 fixed dark:bg-[#202023] bg-white py-[5px] dark:text-white text-black mx-auto">
       <div className="mx-auto max-w-3xl">
         <div className="text-white flex justify-between flex-row md:m-0 p-4 md:p-1 md:pl-5 gap-3">
           <div className="flex flex-row">

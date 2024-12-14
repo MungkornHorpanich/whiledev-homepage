@@ -18,6 +18,8 @@ const ReactTutorial: React.FC = () => {
       })
       .then((data) => setContent(data))
       .catch((error) => console.error(error));
+
+    window.scrollTo(0, 0);
   }, []);
 
   return (
