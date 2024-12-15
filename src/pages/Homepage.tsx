@@ -6,7 +6,7 @@ import edgegambit from "../../public/edgambit.png";
 import reacttutorial from "../../public/images.jpeg";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
-import Carda from "../components/CardA";
+import Carda from "../components/Carda";
 
 const Homepage: React.FC = () => {
   useEffect(() => {
@@ -24,7 +24,7 @@ const Homepage: React.FC = () => {
             className="border border-gray-200 dark:border-gray-700 rounded-2xl w-56 mx-auto my-5 md:mb-5 mb-10"
           />
 
-          <div className="mt-5 text-lg font-semibold">
+          <div className="mt-5 md:text-lg text-md font-semibold">
             Hi, I’m Mungkorn, a coder from Thailand who loves turning ideas into
             reality with code.
             <br />
