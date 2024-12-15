@@ -14,18 +14,18 @@ const Navbar: React.FC = () => {
         <div className="text-white flex justify-between flex-row md:m-0 p-4 md:p-1 md:pl-5 gap-3">
           <div className="flex flex-row">
             <Link to={"/"}>
-              <div className="flex text-2xl md:text-xl justify-center h-full items-center text-center font-semibold font-sans tracking-wide dark:text-gray-200 text-black">
+              <div className="flex text-xl text-xl justify-center h-full items-center text-center font-semibold font-sans tracking-wide dark:text-gray-200 text-black">
                 whiledev.
               </div>
             </Link>
             <div className="ml-8 gap-4 text-black dark:text-white hidden md:flex">
               <Link to={"/work"}>
-                <div className="flex text-md hover:underline p-1 h-full items-center px-2 ">
+                <div className="flex text-md hover:underline p-1 h-full items-center px-2">
                   Works
                 </div>
               </Link>
               <Link to={"/posts"}>
-                <div className="flex text-md hover:underline p-1 h-full items-center px-2 ">
+                <div className="flex text-md hover:underline p-1 h-full items-center px-2">
                   Posts
                 </div>
               </Link>
@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
               <PopoverPanel
                 transition
                 anchor="bottom"
-                className="divide-y mt-3 w-[250px] divide-white/5 rounded-xl dark:bg-[#202023] bg-white border dark:border-gray-700 border-gray-200 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
+                className="divide-y mt-3 z-20  w-[250px] divide-white/5 rounded-xl dark:bg-[#202023] bg-white border dark:border-gray-700 border-gray-200 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
               >
                 <div className="p-3 text-black">
                   <a

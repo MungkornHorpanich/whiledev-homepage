@@ -21,20 +21,20 @@ const Homepage: React.FC = () => {
           <img
             src={avatar}
             alt="avatar"
-            className="border border-gray-200 dark:border-gray-700 rounded-2xl w-56 mx-auto my-5 md:mb-5 mb-10"
+            className="border border-gray-200 dark:border-gray-700 rounded-2xl w-52 mx-auto my-5 md:mb-5 mb-10"
           />
 
-          <div className="mt-5 md:text-lg text-md font-semibold">
-            Hi, I’m Mungkorn, a coder from Thailand who loves turning ideas into
-            reality with code.
-            <br />
-            <br />
-            In this space, I’ll be sharing my projects, insights, and
-            experiences from my programming journey.
-            <br />
-            <br />
-            Stay tuned and explore with me!
-            <br />
+          <div className="mt-5 md:text-lg text-md flex flex-col gap-3">
+            <div>Hi, I’m Mungkorn. I’m 14 years old and I love coding.</div>
+            <div>
+              {" "}
+              I enjoy building projects, learning new technologies, and solving
+              problems.
+            </div>
+            <div>
+              This website is a place to share what I’m working on and what I’ve
+              learned along the way. Thanks for stopping by!
+            </div>
           </div>
         </div>
 
@@ -103,6 +103,7 @@ const Homepage: React.FC = () => {
               title="React + Typescritp Tutorial"
               description="A simple and easy step by step React with Typescirpt tutorial with examples."
               path="react-tutorial"
+              catergory={["react", "web development", "typescript"]}
             />
 
             <Card
@@ -110,6 +111,7 @@ const Homepage: React.FC = () => {
               title="Example"
               description="Just basic example of using the custom components"
               path="react-tutorial"
+              catergory={["react", "web development", "typescript"]}
             />
           </div>
         </div>

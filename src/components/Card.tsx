@@ -7,6 +7,7 @@ interface CardProps {
   description: string;
   style?: string;
   path: string;
+  catergory: string[];
 }
 
 const Card: React.FC<CardProps> = ({
@@ -15,9 +16,10 @@ const Card: React.FC<CardProps> = ({
   description,
   path,
   style,
+  catergory,
 }) => {
   return (
-    <div>
+    <div className="p-5 border border-gray-200 dark:border-[#2e2e2e] rounded-xl">
       <div className={`px-5 md:px-0 flex flex-col ${style}`}>
         <Link to={`/posts/${path}`}>
           <img
@@ -35,6 +37,16 @@ const Card: React.FC<CardProps> = ({
         <p className="px-3 text-md dark:text-gray-200 text-gray-700 tracking-tight pt-1">
           {description}
         </p>
+        <div className="flex mt-2 gap-2 ml-2">
+          {catergory.map((ctgry, index) => (
+            <div
+              key={index}
+              className="text-[10px] p-[3px] px-2 mt-2 bg-gray-200 dark:bg-[#2e2e2e] text-black dark:text-white rounded-xl"
+            >
+              {ctgry}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

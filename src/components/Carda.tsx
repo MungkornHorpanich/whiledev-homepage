@@ -16,8 +16,8 @@ const Carda: React.FC<CardProps> = ({
   tech,
 }) => {
   return (
-    <div className="p-5 border border-gray-200 rounded-xl">
-      <div className="px-5 md:px-0 flex flex-col">
+    <div className="p-5 border border-gray-200 dark:border-[#2e2e2e] rounded-xl">
+      <div className="md:px-0 flex flex-col">
         <a href={path}>
           <img
             src={image}
@@ -31,11 +31,11 @@ const Carda: React.FC<CardProps> = ({
         <p className="px-3 text-sm md:text-md dark:text-gray-200 text-gray-700 tracking-tight pt-1">
           {description}
         </p>
-        <div className="flex mt-2 gap-2">
+        <div className="flex mt-2 gap-2 ml-2">
           {tech.map((technology, index) => (
             <div
               key={index}
-              className="text-[10px] p-[3px] px-2 mt-2 bg-gray-200 rounded-xl"
+              className="text-[10px] p-[3px] px-2 mt-2 bg-gray-200 dark:bg-[#2e2e2e] text-black dark:text-white rounded-xl"
             >
               {technology}
             </div>
