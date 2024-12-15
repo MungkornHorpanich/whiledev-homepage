@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import avatar from "../../public/avatartion.png";
 import edgegambit from "../../public/edgambit.png";
 import reacttutorial from "../../public/images.jpeg";
+import Card from "../components/Card";
+import Footer from "../components/Footer";
+import Carda from "../components/CardA";
 
 const Homepage: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className="dark:bg-[#202023] transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)]  bg-white h-[10000px]">
+    <div className="dark:bg-[#202023] transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)]  bg-white h-full">
       <Navbar />
 
-      <div className="pt-24 max-w-3xl mx-auto px-5 text-black dark:text-white">
+      <div className="pt-20 max-w-3xl mx-auto px-5 text-black dark:text-white">
         <div className="md:flex gap-7">
           <img
             src={avatar}
@@ -71,50 +77,43 @@ const Homepage: React.FC = () => {
 
         <div className="mt-12 flex flex-col">
           <h1 className="text-xl md:text-2xl font-medium">Works</h1>
-          <div className="grid grid-cols-1 mt-4 md:grid-cols-2 md:px-3 md:py-2 mx-auto ">
-            <div className="px-5 md:px-0 flex flex-col">
-              <a href="https://edgegambit.vercel.app/">
-                <img
-                  src={edgegambit}
-                  className="rounded-xl md:hover:scale-105 w-full transition duration-300 ease-in-out cursor-pointer"
-                  alt="hello"
-                />
-              </a>
-              <a href="https://edgegambit.vercel.app/">
-                <h1 className="md:text-2xl text-xl pt-3 font-semibold px-3">
-                  EdgeGambit
-                </h1>
-              </a>
-              <p className="px-3 text-lg dark:text-gray-200 text-gray-700 tracking-tight pt-1">
-                New concept of Trading Competitions, A trading competitions
-                platform.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 gap-3 mt-4 md:grid-cols-2 md:px-3 md:py-2 mx-auto ">
+            <Carda
+              image={edgegambit}
+              title="EdgeGambit"
+              description="New concept of Trading Competitions, A trading competitions platform."
+              path="https://edgegambit.vercel.app/"
+            />
+            <Carda
+              image={edgegambit}
+              title="EdgeGambit"
+              description="New concept of Trading Competitions, A trading competitions platform."
+              path="https://edgegambit.vercel.app/"
+            />
           </div>
         </div>
 
         <div className="mt-12 flex flex-col">
           <h1 className="text-xl md:text-2xl font-medium">Post</h1>
-          <div className="grid grid-cols-1 mt-4 md:grid-cols-2 md:px-3 md:py-2 mx-auto ">
-            <div className="px-5 md:px-0 flex flex-col">
-              <Link to={"/posts/react-tutorial"}>
-                <img
-                  src={reacttutorial}
-                  className="rounded-xl md:hover:scale-105 w-full transition duration-300 ease-in-out cursor-pointer"
-                  alt="hello"
-                />
-              </Link>
-              <h1 className="text-xl md:text-2xl pt-3 font-semibold px-3">
-                React + Typescritp Tutorial
-              </h1>
-              <p className="px-3 text-lg dark:text-gray-200 text-gray-700 tracking-tight pt-1">
-                A simple and easy step by step React with Typescirpt tutorial
-                with examples.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 gap-5 mt-4 md:grid-cols-2 md:px-3 md:py-2 mx-auto ">
+            <Card
+              image={reacttutorial}
+              title="React + Typescritp Tutorial"
+              description="A simple and easy step by step React with Typescirpt tutorial with examples."
+              path="react-tutorial"
+            />
+
+            <Card
+              image={reacttutorial}
+              title="Example"
+              description="Just basic example of using the custom components"
+              path="react-tutorial"
+            />
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

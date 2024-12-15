@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
 
           {/* The burger menu */}
           <div className="flex gap-2">
-            <div className="h-full md:pr-6">
+            <div className="h-full md:pr-4">
               <button
                 onClick={toggleTheme}
                 className="border flex mx-auto justify-center text-black dark:text-white text-3xl md:text-xl md:p-2 h-full text-center p-1 dark:text-white/60 dark:border-gray-700 rounded-md"
