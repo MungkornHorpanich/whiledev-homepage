@@ -62,3 +62,26 @@ const App: React.FC = () => {
   );
 };
 ```
+
+## Now we are learning about receiving props
+
+```tsx
+import React from "react";
+import MyComponent from "./MyComponent";
+
+interface AppProps {
+  title: string;
+  description: string;
+  good: boolean;
+}
+
+const App: React.FC<AppProps> = ({ title, description, good }) => {
+  return (
+    <div>
+      <h1>{title}</h1>
+      <p>{description}</p>
+      <h1>Is this good chatgpt?: {good}</h1>
+    </div>
+  );
+};
+```

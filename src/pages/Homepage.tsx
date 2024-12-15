@@ -13,7 +13,7 @@ const Homepage: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="dark:bg-[#202023] transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)] bg-white h-full">
+    <div className="dark:bg-[#202023] min-h-screen transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)] bg-white">
       <Navbar />
 
       {/* Avatar and bio */}
@@ -67,8 +67,9 @@ const Homepage: React.FC = () => {
         {/* I saw a portfolio from https://andrijaweb.vercel.app/ and I think his technology icons are cool so i copy it */}
         <div className="mt-12 flex flex-col">
           <h1 className="text-xl md:text-2xl font-medium">Technologies</h1>
-          <div className="md:grid md:gap-3 mt-3 md:grid-cols-4 flex flex-col">
-            <div className="flex p-3 rounded-xl bg-gray-200 dark:bg-[#2e2e2e]">
+          <div className="md:grid md:gap-3 mt-3 md:grid-cols-4 flex flex-col gap-2">
+            {/* Typescript */}
+            <div className="flex p-3 rounded-2xl border border-gray-200 dark:border-[#2e2e2e]">
               <img
                 src="https://andrijaweb.vercel.app/imgs/logos/typescript.svg"
                 alt="tailwind logo"
@@ -77,57 +78,9 @@ const Homepage: React.FC = () => {
               <div className="flex flex-col">
                 <h1 className="text-lg font-medium ml-4">Typescript</h1>
                 <div className="ml-4 flex gap-1">
-                  <p className="bg-green-300 py-[2px] rounded-lg px-[8px]">
+                  <div className="text-[12px] py-[1px] px-2 bg-green-300 dark:bg-green-300 text-black rounded-lg">
                     main
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex p-3 rounded-xl bg-gray-200 dark:bg-[#2e2e2e]">
-              <img
-                src="https://andrijaweb.vercel.app/imgs/logos/typescript.svg"
-                alt="tailwind logo"
-                className="w-14 p-3 rounded-xl bg-[#3178c6]/20"
-              />
-              <div className="flex flex-col">
-                <h1 className="text-lg font-medium ml-4">Typescript</h1>
-                <div className="ml-4 flex gap-1">
-                  <p className="bg-green-300 py-[2px] rounded-lg px-[8px]">
-                    main
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex p-3 rounded-xl bg-gray-200 dark:bg-[#2e2e2e]">
-              <img
-                src="https://andrijaweb.vercel.app/imgs/logos/typescript.svg"
-                alt="tailwind logo"
-                className="w-14 p-3 rounded-xl bg-[#3178c6]/20"
-              />
-              <div className="flex flex-col">
-                <h1 className="text-lg font-medium ml-4">Typescript</h1>
-                <div className="ml-4 flex gap-1">
-                  <p className="bg-green-300 py-[2px] rounded-lg px-[8px]">
-                    main
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex p-3 rounded-xl bg-gray-200 dark:bg-[#2e2e2e]">
-              <img
-                src="https://andrijaweb.vercel.app/imgs/logos/typescript.svg"
-                alt="tailwind logo"
-                className="w-14 p-3 rounded-xl bg-[#3178c6]/20"
-              />
-              <div className="flex flex-col">
-                <h1 className="text-lg font-medium ml-4">Typescript</h1>
-                <div className="ml-4 flex gap-1">
-                  <p className="bg-green-300 py-[2px] rounded-lg px-[8px]">
-                    main
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -173,7 +126,7 @@ const Homepage: React.FC = () => {
         {/* Works */}
         <div className="mt-12 flex flex-col">
           <h1 className="text-xl md:text-2xl font-medium">Works</h1>
-          <div className="grid grid-cols-1 gap-3 mt-4 md:grid-cols-2 md:px-3 md:py-2 mx-auto ">
+          <div className="grid grid-cols-1 gap-3 mt-4 md:grid-cols-2 md:px-3 md:py-2">
             <Carda
               image={edgegambit}
               title="EdgeGambit"
@@ -194,7 +147,7 @@ const Homepage: React.FC = () => {
         {/* Posts */}
         <div className="mt-12 flex flex-col">
           <h1 className="text-xl md:text-2xl font-medium">Posts</h1>
-          <div className="grid grid-cols-1 gap-5 mt-4 md:grid-cols-2 md:px-3 md:py-2 mx-auto ">
+          <div className="grid grid-cols-1 gap-3 mt-4 md:grid-cols-2 md:px-3 md:py-2">
             <Card
               image={reacttutorial}
               title="React + Typescritp Tutorial"
