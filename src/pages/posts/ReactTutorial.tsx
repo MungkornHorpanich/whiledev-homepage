@@ -7,6 +7,7 @@ import Footer from "../../components/Footer";
 
 const ReactTutorial: React.FC = () => {
   const [content, setContent] = useState<string>(``);
+  const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
     // Fetch the Markdown file from the public folder
@@ -21,6 +22,10 @@ const ReactTutorial: React.FC = () => {
       .catch((error) => console.error(error));
 
     window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    console.log(loading);
   }, []);
 
   return (
