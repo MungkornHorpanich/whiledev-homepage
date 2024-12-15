@@ -13,7 +13,7 @@ const Homepage: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="dark:bg-[#202023] transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)]  bg-white h-full">
+    <div className="dark:bg-[#202023] transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)] bg-white h-full">
       <Navbar />
 
       <div className="pt-20 max-w-3xl mx-auto px-5 text-black dark:text-white">
@@ -21,10 +21,10 @@ const Homepage: React.FC = () => {
           <img
             src={avatar}
             alt="avatar"
-            className="border border-gray-200 dark:border-gray-700 rounded-2xl w-52 mx-auto my-5 md:mb-5 mb-10"
+            className="border border-gray-200 dark:border-gray-700 rounded-2xl w-52 mx-auto my-5 md:mb-5 mb-8"
           />
 
-          <div className="mt-5 md:text-lg text-md flex flex-col gap-3">
+          <div className="mt-5 md:text-[17px] text-md flex flex-col gap-3">
             <div>Hi, I’m Mungkorn. I’m 14 years old and I love coding.</div>
             <div>
               {" "}
@@ -35,18 +35,40 @@ const Homepage: React.FC = () => {
               This website is a place to share what I’m working on and what I’ve
               learned along the way. Thanks for stopping by!
             </div>
+            <div className="flex gap-1 text-blue-800 cursor-pointer dark:text-yellow-200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              <p> Chonburi, Thailand</p>
+            </div>
           </div>
         </div>
 
-        <div className="text-black text-center dark:text-white mt-10 dark:bg-[#2e2e2e] px-4 mx-auto text-md md:text-lg bg-gray-100 py-2 md:py-4  md:font-medium rounded-lg p-1 transition duration-600 ease-in-out [--anchor-gap:var(--spacing-5)] ">
-          💻 Hello, I'm an indie app developer based in Thailand!
+        <div className="mt-12 flex flex-col">
+          <h1 className="text-xl md:text-2xl font-medium">Technologies</h1>
         </div>
 
         <div className="mt-12 flex flex-col">
           <h1 className="text-xl md:text-2xl font-medium">My Contents</h1>
           <div className="md:grid md:grid-cols-3 flex flex-col ">
             <Link to={"/posts"}>
-              <div className="flex flex-col md:mx-2 my-2 mt-4 hover:shadow-sm hover:shadow-gray-400 hover:translate-y-[-5px] py-6 md:m-5 dark:border-gray-700 border-gray-200 border rounded-lg">
+              <div className="flex flex-col md:mx-2 my-2 mt-4 hover:shadow-sm hover:shadow-gray-400 hover:translate-y-[-5px] py-6 md:m-5 dark:border-[#2e2e2e] border-gray-200 border rounded-lg">
                 <h1 className="text-center font-medium">Posts</h1>
                 <h1 className="text-center font-bold">69</h1>
                 <h1 className="text-center text-[14px] text-gray-400 font-thin">
@@ -55,7 +77,7 @@ const Homepage: React.FC = () => {
               </div>
             </Link>
             <a href="https://www.youtube.com/@WhileDev77">
-              <div className="flex flex-col md:mx-2 my-2 hover:shadow-sm hover:shadow-gray-400 hover:translate-y-[-5px] py-6 md:m-5 dark:border-gray-700 border-gray-200 border rounded-lg">
+              <div className="flex flex-col md:mx-2 my-2 hover:shadow-sm hover:shadow-gray-400 hover:translate-y-[-5px] py-6 md:m-5 dark:border-[#2e2e2e] border-gray-200 border rounded-lg">
                 <h1 className="text-center font-medium">Videos</h1>
                 <h1 className="text-center font-bold">1</h1>
                 <h1 className="text-center text-[14px] text-gray-400 font-thin">
@@ -64,7 +86,7 @@ const Homepage: React.FC = () => {
               </div>
             </a>
             <a href="">
-              <div className="flex flex-col md:mx-2 my-2 hover:shadow-sm hover:shadow-gray-400 hover:translate-y-[-5px] py-6 md:m-5 dark:border-gray-700 border-gray-200 border rounded-lg">
+              <div className="flex flex-col md:mx-2 my-2 hover:shadow-sm hover:shadow-gray-400 hover:translate-y-[-5px] py-6 md:m-5 dark:border-[#2e2e2e] border-gray-200 border rounded-lg">
                 <h1 className="text-center font-medium">Projects</h1>
                 <h1 className="text-center font-bold">30</h1>
                 <h1 className="text-center text-[14px] text-gray-400 font-thin">
