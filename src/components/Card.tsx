@@ -20,7 +20,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div className="p-5 border border-gray-200 dark:border-[#2e2e2e] rounded-xl">
-      <div className={`px-5 md:px-0 flex flex-col ${style}`}>
+      <div className={`md:px-0 flex flex-col ${style}`}>
         <Link to={`/posts/${path}`}>
           <img
             src={image}

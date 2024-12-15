@@ -48,20 +48,20 @@ const Navbar: React.FC = () => {
             <div className="h-full md:pr-4">
               <button
                 onClick={toggleTheme}
-                className="border flex mx-auto justify-center text-black dark:text-white text-3xl md:text-xl md:p-2 h-full text-center p-1 dark:text-white/60 dark:border-gray-700 rounded-md"
+                className="border flex mx-auto justify-center text-black dark:text-white text-2xl md:text-xl md:p-2 h-full text-center p-1 dark:text-white/60 dark:border-gray-700 rounded-md"
               >
                 {theme === "light" ? <HiMoon /> : <HiSun />}
               </button>
             </div>
 
             <Popover className="md:hidden">
-              <PopoverButton className="flex border dark:border-gray-700 p-1 rounded-lg text-3xl items-center mx-auto text-center dark:text-white/50 text-black focus:outline-none ">
+              <PopoverButton className="flex border dark:border-gray-700 p-1 rounded-lg text-2xl items-center mx-auto text-center dark:text-white/50 text-black focus:outline-none ">
                 <HiMenu />
               </PopoverButton>
               <PopoverPanel
                 transition
                 anchor="bottom"
-                className="divide-y mt-3 z-20  w-[250px] divide-white/5 rounded-xl dark:bg-[#202023] bg-white border dark:border-gray-700 border-gray-200 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
+                className="divide-y mt-3 z-20 w-[250px] divide-white/5 rounded-xl dark:bg-[#202023] bg-white border dark:border-gray-700 border-gray-200 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
               >
                 <div className="p-3 text-black">
                   <a
