@@ -16,7 +16,8 @@ const Homepage: React.FC = () => {
     <div className="dark:bg-[#202023] transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)] bg-white h-full">
       <Navbar />
 
-      <div className="pt-20 max-w-3xl mx-auto px-5 text-black dark:text-white">
+      {/* Avatar and bio */}
+      <div className="pt-20 max-w-4xl mx-auto px-5 text-black dark:text-white">
         <div className="md:flex gap-7">
           <img
             src={avatar}
@@ -24,8 +25,10 @@ const Homepage: React.FC = () => {
             className="border border-gray-200 dark:border-gray-700 rounded-2xl w-52 mx-auto my-5 md:mb-5 mb-8"
           />
 
-          <div className="mt-5 md:text-[17px] text-md flex flex-col gap-3">
-            <div>Hi, I’m Mungkorn. I’m 14 years old and I love coding.</div>
+          <div className="mt-5 md:text-[18px] text-md flex flex-col gap-3">
+            <div>
+              Hi, I’m Mungkorn. I’m 14 years old developer and I love coding.
+            </div>
             <div>
               {" "}
               I enjoy building projects, learning new technologies, and solving
@@ -60,10 +63,80 @@ const Homepage: React.FC = () => {
           </div>
         </div>
 
+        {/* Technologies */}
+        {/* I saw a portfolio from https://andrijaweb.vercel.app/ and I think his technology icons are cool so i copy it */}
         <div className="mt-12 flex flex-col">
           <h1 className="text-xl md:text-2xl font-medium">Technologies</h1>
+          <div className="md:grid md:gap-3 mt-3 md:grid-cols-4 flex flex-col">
+            <div className="flex p-3 rounded-xl bg-gray-200 dark:bg-[#2e2e2e]">
+              <img
+                src="https://andrijaweb.vercel.app/imgs/logos/typescript.svg"
+                alt="tailwind logo"
+                className="w-14 p-3 rounded-xl bg-[#3178c6]/20"
+              />
+              <div className="flex flex-col">
+                <h1 className="text-lg font-medium ml-4">Typescript</h1>
+                <div className="ml-4 flex gap-1">
+                  <p className="bg-green-300 py-[2px] rounded-lg px-[8px]">
+                    main
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex p-3 rounded-xl bg-gray-200 dark:bg-[#2e2e2e]">
+              <img
+                src="https://andrijaweb.vercel.app/imgs/logos/typescript.svg"
+                alt="tailwind logo"
+                className="w-14 p-3 rounded-xl bg-[#3178c6]/20"
+              />
+              <div className="flex flex-col">
+                <h1 className="text-lg font-medium ml-4">Typescript</h1>
+                <div className="ml-4 flex gap-1">
+                  <p className="bg-green-300 py-[2px] rounded-lg px-[8px]">
+                    main
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex p-3 rounded-xl bg-gray-200 dark:bg-[#2e2e2e]">
+              <img
+                src="https://andrijaweb.vercel.app/imgs/logos/typescript.svg"
+                alt="tailwind logo"
+                className="w-14 p-3 rounded-xl bg-[#3178c6]/20"
+              />
+              <div className="flex flex-col">
+                <h1 className="text-lg font-medium ml-4">Typescript</h1>
+                <div className="ml-4 flex gap-1">
+                  <p className="bg-green-300 py-[2px] rounded-lg px-[8px]">
+                    main
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex p-3 rounded-xl bg-gray-200 dark:bg-[#2e2e2e]">
+              <img
+                src="https://andrijaweb.vercel.app/imgs/logos/typescript.svg"
+                alt="tailwind logo"
+                className="w-14 p-3 rounded-xl bg-[#3178c6]/20"
+              />
+              <div className="flex flex-col">
+                <h1 className="text-lg font-medium ml-4">Typescript</h1>
+                <div className="ml-4 flex gap-1">
+                  <p className="bg-green-300 py-[2px] rounded-lg px-[8px]">
+                    main
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* */}
+          </div>
         </div>
 
+        {/* My Contents */}
         <div className="mt-12 flex flex-col">
           <h1 className="text-xl md:text-2xl font-medium">My Contents</h1>
           <div className="md:grid md:grid-cols-3 flex flex-col ">
@@ -97,6 +170,7 @@ const Homepage: React.FC = () => {
           </div>
         </div>
 
+        {/* Works */}
         <div className="mt-12 flex flex-col">
           <h1 className="text-xl md:text-2xl font-medium">Works</h1>
           <div className="grid grid-cols-1 gap-3 mt-4 md:grid-cols-2 md:px-3 md:py-2 mx-auto ">
@@ -117,8 +191,9 @@ const Homepage: React.FC = () => {
           </div>
         </div>
 
+        {/* Posts */}
         <div className="mt-12 flex flex-col">
-          <h1 className="text-xl md:text-2xl font-medium">Post</h1>
+          <h1 className="text-xl md:text-2xl font-medium">Posts</h1>
           <div className="grid grid-cols-1 gap-5 mt-4 md:grid-cols-2 md:px-3 md:py-2 mx-auto ">
             <Card
               image={reacttutorial}
