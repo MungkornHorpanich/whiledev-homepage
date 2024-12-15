@@ -5,11 +5,18 @@ interface CardProps {
   title: string;
   description: string;
   path: string;
+  tech: string[];
 }
 
-const Carda: React.FC<CardProps> = ({ image, title, description, path }) => {
+const Carda: React.FC<CardProps> = ({
+  image,
+  title,
+  description,
+  path,
+  tech,
+}) => {
   return (
-    <div>
+    <div className="p-5 border border-gray-200 rounded-xl">
       <div className="px-5 md:px-0 flex flex-col">
         <a href={path}>
           <img
@@ -18,12 +25,22 @@ const Carda: React.FC<CardProps> = ({ image, title, description, path }) => {
             alt="hello"
           />
         </a>
-        <a href={path} className="text-lg md:text-2xl pt-3 font-semibold px-3">
+        <a href={path} className="text-lg md:text-xl pt-3 font-semibold px-3">
           {title}
         </a>
-        <p className="px-3 text-md dark:text-gray-200 text-gray-700 tracking-tight pt-1">
+        <p className="px-3 text-sm md:text-md dark:text-gray-200 text-gray-700 tracking-tight pt-1">
           {description}
         </p>
+        <div className="flex mt-2 gap-2">
+          {tech.map((technology, index) => (
+            <div
+              key={index}
+              className="text-[10px] p-[3px] px-2 mt-2 bg-gray-200 rounded-xl"
+            >
+              {technology}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

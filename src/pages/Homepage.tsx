@@ -83,12 +83,14 @@ const Homepage: React.FC = () => {
               title="EdgeGambit"
               description="New concept of Trading Competitions, A trading competitions platform."
               path="https://edgegambit.vercel.app/"
+              tech={["typescirpt", "react", "tailwindcss"]}
             />
             <Carda
               image={edgegambit}
               title="EdgeGambit"
               description="New concept of Trading Competitions, A trading competitions platform."
               path="https://edgegambit.vercel.app/"
+              tech={["typescirpt", "react", "tailwindcss"]}
             />
           </div>
         </div>
