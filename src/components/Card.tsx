@@ -51,11 +51,11 @@ const Card: React.FC<CardProps> = ({
         </div>
         <Link
           to={"/posts/react-tutorial"}
-          className="text-lg md:text-2xl pt-3 font-semibold px-3"
+          className="text-lg md:text-xl pt-3 font-semibold px-3"
         >
           {title}
         </Link>
-        <p className="px-3 text-md dark:text-gray-200 text-gray-700 tracking-tight pt-1">
+        <p className="px-3 text-sm dark:text-gray-200 text-gray-700 tracking-tight pt-1">
           {description}
         </p>
         <div className="flex mt-2 gap-2 ml-2">
