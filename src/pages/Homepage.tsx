@@ -26,7 +26,7 @@ const Homepage: React.FC = () => {
           />
 
           <div className="mt-5 md:text-[18px] text-md flex flex-col gap-3">
-            <div>
+            <div className="md:pt-2">
               Hi, I’m Mungkorn. I’m 14 years old developer and I love coding.
             </div>
             <div>
