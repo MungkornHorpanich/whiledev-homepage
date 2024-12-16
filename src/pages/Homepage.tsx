@@ -73,21 +73,21 @@ const Homepage: React.FC = () => {
             {/* https://andrijaweb.vercel.app/imgs/logos/typescript.svg | [#3178c6]/20 */}
             <Tech
               name="Typescript"
-              bgColor="[#3178c6]/20"
+              bgColor="bg-[#3178c6]/20"
               fileUrl="https://andrijaweb.vercel.app/imgs/logos/typescript.svg"
               catergory={["main"]}
             />
 
             <Tech
               name="React"
-              bgColor="[#61DAFB]/20"
+              bgColor="bg-[#61DAFB]/20"
               fileUrl="https://andrijaweb.vercel.app/imgs/logos/react.svg"
               catergory={["main"]}
             />
 
             <Tech
               name="Tailwind"
-              bgColor="[#0EA5E9]/20"
+              bgColor="bg-[#0EA5E9]/20"
               fileUrl="https://andrijaweb.vercel.app/imgs/logos/tailwind.svg"
               catergory={["main"]}
             />
@@ -95,35 +95,35 @@ const Homepage: React.FC = () => {
             <Tech
               name="GraphQL"
               fileUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png"
-              bgColor="[#e535ab]/20"
+              bgColor="bg-[#e535ab]/20"
               catergory={["main"]}
             />
 
             <Tech
               name="Python"
               fileUrl="https://img.icons8.com/?size=512&id=13441&format=png"
-              bgColor="[#4584b6]/20"
+              bgColor="bg-[#4584b6]/20"
               catergory={["secondary"]}
             />
 
             <Tech
               name="PostgreSQL"
               fileUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
-              bgColor="[#336791]/20"
+              bgColor="bg-[#336791]/20"
               catergory={["database"]}
             />
 
             <Tech
               name="Docker"
               fileUrl="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
-              bgColor="[#1D63ED]/20"
+              bgColor="bg-[#1D63ED]/20"
               catergory={["tools"]}
             />
 
             <Tech
               name="Git"
               fileUrl="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
-              bgColor="[#F1502F]/20"
+              bgColor="bg-[#F1502F]/20"
               catergory={["tools"]}
             />
 
@@ -230,6 +230,25 @@ const Homepage: React.FC = () => {
               catergory={["react", "web development", "typescript"]}
             />
           </div>
+          <Link to={"/posts"}>
+            <h1 className="font-medium flex py-3 mx-0 mt-3 md:mt-0 md:mx-3 rounded-xl border border-gray-200 dark:border-[#2e2e2e] px-5 ">
+              <p>More post.</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                />
+              </svg>
+            </h1>
+          </Link>
         </div>
       </div>
 

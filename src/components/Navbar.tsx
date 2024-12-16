@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
         <div className="text-white flex justify-between flex-row md:m-0 p-4 md:p-1 md:pl-5 gap-3">
           <div className="flex flex-row">
             <Link to={"/"}>
-              <div className="flex text-xl text-xl justify-center h-full items-center text-center font-semibold font-sans tracking-wide dark:text-gray-200 text-black">
+              <div className="flex text-xl justify-center h-full items-center text-center font-semibold font-sans tracking-wide dark:text-gray-200 text-black">
                 whiledev.
               </div>
             </Link>
@@ -64,13 +64,13 @@ const Navbar: React.FC = () => {
                 className="divide-y mt-3 z-20 w-[250px] divide-white/5 rounded-xl dark:bg-[#202023] bg-white border dark:border-gray-700 border-gray-200 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
               >
                 <div className="p-3 text-black">
-                  <a
+                  <Link
                     className="block rounded-lg py-2 px-3 transition dark:hover:bg-white/5 hover:bg-black/5"
-                    href="#"
+                    to={"/work"}
                   >
                     <p className="font-semibold dark:text-white">Works</p>
                     <p className="dark:text-white/50">Projects I've created</p>
-                  </a>
+                  </Link>
                   <Link
                     to="/posts"
                     className="block rounded-lg py-2 px-3 transition dark:hover:bg-white/5 hover:bg-black/5"

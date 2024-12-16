@@ -14,7 +14,7 @@ const Tech: React.FC<TechProps> = ({ fileUrl, bgColor, catergory, name }) => {
         <img
           src={fileUrl}
           alt="tailwind logo"
-          className={`w-14 p-3 rounded-xl bg-${bgColor}`}
+          className={`w-14 p-3 rounded-xl ${bgColor}`}
         />
         <div className="flex flex-col">
           <h1 className="text-lg font-medium ml-2">{name}</h1>
