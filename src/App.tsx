@@ -3,7 +3,7 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Work from "./pages/Work";
 import Posts from "./pages/Posts";
-import LearnNext from "./pages/posts/LearnNext";
+import NextVSApollo from "./pages/posts/NextVSApollo";
 
 const router = createHashRouter([
   {
@@ -20,7 +20,7 @@ const router = createHashRouter([
   },
   {
     path: "/posts/next-vs-apollo",
-    element: <LearnNext />,
+    element: <NextVSApollo />,
   },
 ]);
 

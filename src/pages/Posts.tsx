@@ -12,7 +12,7 @@ const Posts: React.FC = () => {
   return (
     <div className="dark:bg-[#202023] transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)] min-h-screen bg-white overflow-auto">
       <Navbar />
-      <div className="pt-20 max-w-3xl mx-auto pl-5 text-black dark:text-white">
+      <div className="pt-20 max-w-4xl mx-auto pl-5 text-black dark:text-white">
         <h1 className="text-xl md:text-2xl font-medium">Posts</h1>
         <div className="grid text-black dark:text-white grid-cols-1 gap-3 mt-4 md:grid-cols-2 md:px-3 md:py-2">
           <Card

@@ -180,14 +180,14 @@ const Homepage: React.FC = () => {
               title="EdgeGambit"
               description="New concept of Trading Competitions, A trading competitions platform."
               path="https://edgegambit.vercel.app/"
-              tech={["typescirpt", "react", "tailwindcss"]}
+              tech={["typescirpt", "react", "tailwindcss", "express"]}
             />
             <Carda
               image={ChatBubble}
               title="Chat-Bubble Effect"
               description="Simple Chat-Bubble effect app"
               path="https://whiledev-chat-bubble.vercel.app/"
-              tech={["typescirpt", "react", "tailwindcss"]}
+              tech={["typescirpt", "react", "tailwindcss", "framer-motion"]}
             />
           </div>
 
@@ -234,9 +234,9 @@ const Homepage: React.FC = () => {
 
             <Card
               image={reacttutorial}
-              title="Example"
-              description="Just basic example of using the custom components"
-              path="react-tutorial"
+              title="How I learn Next.js in 5 days."
+              description="In this post I'm sharing my experience of learning Next.js using only 5 days."
+              path="learn-next-5days"
               catergory={["react", "web development", "typescript"]}
             />
           </div>

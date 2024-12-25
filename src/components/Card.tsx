@@ -26,7 +26,7 @@ const Card: React.FC<CardProps> = ({
             <Link to={`/posts/${path}`}>
               <img
                 src={image}
-                className="rounded-xl md:hover:scale-105 w-full h-52 transition duration-300 ease-in-out cursor-pointer"
+                className="rounded-xl object-cover md:hover:scale-105 w-full h-52 transition duration-300 ease-in-out cursor-pointer"
                 alt="hello"
               />
             </Link>
