@@ -3,18 +3,19 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import avatar from "../../public/avatartion.png";
 import edgegambit from "../../public/edgambit.png";
-import reacttutorial from "../../public/images.jpeg";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
 import Carda from "../components/Carda";
-import Tech from "../components/Tech";
 import NextTutorial from "../../public/images (1).png";
+import NextApollo from "../../public/next-apollo.png";
 import ChatBubble from "../../public/chat-bubble.png";
+import Technologies from "../components/Technologies";
 
 const Homepage: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="dark:bg-[#202023] min-h-screen transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)] bg-white">
       <Navbar />
@@ -41,7 +42,7 @@ const Homepage: React.FC = () => {
               This website is a place to share what I’m working on and what I’ve
               learned along the way. Thanks for stopping by!
             </div>
-            <div className="flex gap-1 text-blue-800 cursor-pointer dark:text-yellow-200">
+            <div className="flex gap-1 cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -70,67 +71,7 @@ const Homepage: React.FC = () => {
         {/* I saw a portfolio from https://andrijaweb.vercel.app/ and I think his technology icons are cool so i copy it */}
         <div className="mt-12 flex flex-col">
           <h1 className="text-xl md:text-2xl font-medium">Technologies</h1>
-          <div className="md:grid md:gap-3 mt-3 md:grid-cols-4 flex flex-col gap-2">
-            {/* Typescript */}
-            {/* https://andrijaweb.vercel.app/imgs/logos/typescript.svg | [#3178c6]/20 */}
-            <Tech
-              name="Typescript"
-              bgColor="bg-[#3178c6]/20"
-              fileUrl="https://andrijaweb.vercel.app/imgs/logos/typescript.svg"
-              catergory={["main"]}
-            />
-
-            <Tech
-              name="React"
-              bgColor="bg-[#61DAFB]/20"
-              fileUrl="https://andrijaweb.vercel.app/imgs/logos/react.svg"
-              catergory={["main"]}
-            />
-
-            <Tech
-              name="Tailwind"
-              bgColor="bg-[#0EA5E9]/20"
-              fileUrl="https://andrijaweb.vercel.app/imgs/logos/tailwind.svg"
-              catergory={["main"]}
-            />
-
-            <Tech
-              name="GraphQL"
-              fileUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png"
-              bgColor="bg-[#e535ab]/20"
-              catergory={["main"]}
-            />
-
-            <Tech
-              name="Python"
-              fileUrl="https://img.icons8.com/?size=512&id=13441&format=png"
-              bgColor="bg-[#4584b6]/20"
-              catergory={["secondary"]}
-            />
-
-            <Tech
-              name="PostgreSQL"
-              fileUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
-              bgColor="bg-[#336791]/20"
-              catergory={["database"]}
-            />
-
-            <Tech
-              name="Docker"
-              fileUrl="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
-              bgColor="bg-[#1D63ED]/20"
-              catergory={["tools"]}
-            />
-
-            <Tech
-              name="Git"
-              fileUrl="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
-              bgColor="bg-[#F1502F]/20"
-              catergory={["tools"]}
-            />
-
-            {/* */}
-          </div>
+          <Technologies />
         </div>
 
         {/* My Contents */}
@@ -223,7 +164,7 @@ const Homepage: React.FC = () => {
           <h1 className="text-xl md:text-2xl font-medium">Posts</h1>
           <div className="grid grid-cols-1 gap-3 mt-4 md:grid-cols-2 md:px-3 md:py-2">
             <Card
-              image={NextTutorial}
+              image={NextApollo}
               title="Why GraphQL with Apollo Server Feels Like Overkill for Smaller SaaS Projects and Next.js is better for SaaS."
               description="In this post I'm covering why I switched from GraphQL, Apollo Server with TypeORM to Next. js with Prisma"
               path="next-vs-apollo"
@@ -239,11 +180,20 @@ const Homepage: React.FC = () => {
             />
 
             <Card
-              image={reacttutorial}
+              image={NextTutorial}
               title="How I learn Next.js in 5 days and how you can do it faster than me."
-              description="In this post I'm sharing my experience of learning Next.js using only 5 days."
+              description="In this post I'm sharing my experience of learning Next.js in only 5 days. I will also cover how you can learn Next.js even faster than me. and tips that I learn from learning Next.js and resources for finding knowledge about Next.js"
               path="learn-next-5days"
-              catergory={["react", "web development", "typescript"]}
+              catergory={[
+                "react",
+                "next.js",
+                "web development",
+                "typescript",
+                "shadcn",
+                "next-auth",
+                "tailwindcss",
+                "prisma",
+              ]}
             />
           </div>
           <Link to={"/posts"}>
