@@ -157,10 +157,10 @@ const Homepage: React.FC = () => {
                 </h1>
               </div>
             </a>
-            <a href="">
+            <a href="https://github.com/MungkornHorpanich?tab=repositories">
               <div className="flex flex-col md:mx-2 my-2 hover:shadow-sm hover:shadow-gray-400 hover:translate-y-[-5px] py-6 md:m-5 dark:border-[#2e2e2e] border-gray-200 border rounded-lg">
                 <h1 className="text-center font-medium">Projects</h1>
-                <h1 className="text-center font-bold">32</h1>
+                <h1 className="text-center font-bold">23</h1>
                 <h1 className="text-center text-[14px] text-gray-400 font-thin">
                   โปรเจค
                 </h1>
@@ -180,7 +180,13 @@ const Homepage: React.FC = () => {
               title="EdgeGambit"
               description="New concept of Trading Competitions, A trading competitions platform."
               path="https://edgegambit.vercel.app/"
-              tech={["typescirpt", "react", "tailwindcss", "express"]}
+              tech={[
+                "typescirpt",
+                "react",
+                "tailwindcss",
+                "express",
+                "mongodb",
+              ]}
             />
             <Carda
               image={ChatBubble}
@@ -234,7 +240,7 @@ const Homepage: React.FC = () => {
 
             <Card
               image={reacttutorial}
-              title="How I learn Next.js in 5 days."
+              title="How I learn Next.js in 5 days and how you can do it faster than me."
               description="In this post I'm sharing my experience of learning Next.js using only 5 days."
               path="learn-next-5days"
               catergory={["react", "web development", "typescript"]}
