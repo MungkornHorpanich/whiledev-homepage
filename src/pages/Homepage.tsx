@@ -42,7 +42,7 @@ const Homepage: React.FC = () => {
               This website is a place to share what I’m working on and what I’ve
               learned along the way. Thanks for stopping by!
             </div>
-            <div className="flex gap-1 cursor-pointer">
+            <div className="flex gap-1 cursor-pointer dark:text-blue-300 text-blue-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
