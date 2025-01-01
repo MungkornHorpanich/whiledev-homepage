@@ -22,7 +22,7 @@ const Carda: React.FC<CardProps> = ({
           <a href={path}>
             <img
               src={image}
-              className="rounded-xl md:hover:scale-105 h-52 w-full transition duration-300 ease-in-out cursor-pointer"
+              className="rounded-xl md:hover:scale-105 h-52 w-full transition duration-300 ease-in-out cursor-pointer object-cover"
               alt="hello"
             />
           </a>
