@@ -20,6 +20,7 @@ const Homepage: React.FC = () => {
     <div className="dark:bg-[#202023] min-h-screen transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)] bg-white">
       <Navbar />
 
+
       {/* Avatar and bio */}
       <div className="pt-20 max-w-4xl mx-auto px-5 text-black dark:text-white">
         <div className="md:flex gap-7">
