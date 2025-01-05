@@ -4,7 +4,7 @@ import Homepage from "./pages/Homepage";
 import Work from "./pages/Work";
 import Posts from "./pages/Posts";
 import NextVSApollo from "./pages/posts/NextVSApollo";
-import LearnNext from "./pages/posts/LearnNext";
+import MacosWorkflow from "./pages/posts/MacosWorkflow";
 
 const router = createHashRouter([
   {
@@ -24,8 +24,8 @@ const router = createHashRouter([
     element: <NextVSApollo />,
   },
   {
-    path: "/posts/learn-next-5days",
-    element: <LearnNext />,
+    path: "/posts/macos-workflow",
+    element: <MacosWorkflow />,
   },
 ]);
 

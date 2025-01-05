@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Card from "../components/Card";
 import NextTutorial from "../../public/images (1).png";
 import NextApollo from "../../public/next-apollo.png";
+import MacOS from "../../public/macOS.png";
 
 const Posts: React.FC = () => {
   useEffect(() => {
@@ -33,19 +34,19 @@ const Posts: React.FC = () => {
           />
 
           <Card
-            image={NextTutorial}
-            title="How I learn Next.js in 5 days and how you can do it faster than me."
-            description="In this post I'm sharing my experience of learning Next.js in only 5 days. I will also cover how you can learn Next.js even faster than me. and tips that I learn from learning Next.js and resources for finding knowledge about Next.js"
-            path="learn-next-5days"
+            image={MacOS}
+            title="The Ultimate macOS Workflow for Power Users: My Tools and Setup"
+            description="Switching from Yabai to Aerospace has transformed my macOS workflow. In this post, I explain how Aerospace, combined with Ghostty Terminal, Tmux, and SketchyBar, creates a powerful and efficient setup for maximizing productivity."
+            path="macos-workflow"
             catergory={[
-              "react",
-              "next.js",
-              "web development",
-              "typescript",
-              "shadcn",
-              "next-auth",
-              "tailwindcss",
-              "prisma",
+              "macOS",
+              "window management",
+              "productivity",
+              "aerospace",
+              "terminal",
+              "tmux",
+              "sketchybar",
+              "ghostty",
             ]}
           />
         </div>
