@@ -174,6 +174,8 @@ As you can see again, Next. js is simpler with easier than GraghQL with Apollo S
 ## Conclusion
 Next.js is simpler and faster for building SaaS projects because it offers built-in features like server-side rendering, routing, and API routes, reducing the need for complex configurations. With its ease of use and excellent performance, it allows developers to quickly prototype and deploy applications, making it a great choice for rapidly shipping SaaS products.
 
+---
+
 `;
 
   return (
