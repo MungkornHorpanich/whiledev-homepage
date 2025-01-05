@@ -14,7 +14,6 @@ const useTheme = () => {
     } else {
       root.classList.remove("dark");
     }
-
     localStorage.setItem("theme", theme);
   }, [theme]);
 
