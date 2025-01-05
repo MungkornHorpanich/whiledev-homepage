@@ -11,7 +11,7 @@ const NextVSApollo: React.FC = () => {
   }, []);
 
   const content = `
-
+### Coming soon.
 
 
 `;
