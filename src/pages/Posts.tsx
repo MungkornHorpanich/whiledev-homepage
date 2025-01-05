@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
-import NextTutorial from "../../public/images (1).png";
 import NextApollo from "../../public/next-apollo.png";
 import MacOS from "../../public/macOS.png";
 
