@@ -38,7 +38,7 @@ const Posts: React.FC = () => {
             description="Switching from Yabai to Aerospace has transformed my macOS workflow. In this post, I explain how Aerospace, combined with Ghostty Terminal, Tmux, and SketchyBar, creates a powerful and efficient setup for maximizing productivity."
             path="macos-workflow"
             catergory={[
-              "macOS",
+              "macos",
               "window management",
               "productivity",
               "aerospace",
