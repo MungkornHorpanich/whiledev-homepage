@@ -183,7 +183,7 @@ Next.js is simpler and faster for building SaaS projects because it offers built
       <article>
         <div className="dark:bg-[#202023] min-h-screen  overflow-auto transition duration-400 ease-in-out [--anchor-gap:var(--spacing-5)] bg-white ">
           <Navbar />
-          <div className="pt-24 px-5 text-xl text-black dark:text-white max-w-2xl mx-auto md:max-w-3xl">
+          <div className="pt-24 px-5 text-xl text-black dark:text-white max-w-2xl mx-auto md:max-w-4xl">
             <div className="prose prose-zinc dark:prose-invert !max-w-none">
               <Markdown
                 children={content}
