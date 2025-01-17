@@ -32,7 +32,7 @@ const Card: React.FC<CardProps> = ({
             </Link>
           </div>
           <Link
-            to={"/posts/react-tutorial"}
+            to={`/posts/${path}`}
             className="text-lg md:text-xl pt-2 font-semibold px-3"
           >
             {title}
